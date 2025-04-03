@@ -1,91 +1,179 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "TransitionZero",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "href": "https://www.transitionzero.org/"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#ffb405",
+    "light": "#ffb405",
+    "dark": "#ffb405",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#ffb405",
+      "to": "#ffb405"
     }
   },
+  "background": { "style": "gradient" },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Join newsletter",
+      "url": "https://www.transitionzero.org/newsletter"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "type": "github",
+    "url": "https://github.com/orgs/transition-zero/"
   },
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "reference"
     }
   ],
+  "font":{
+    "headings": {
+      "family": "__good_sans_7eeedd",
+      "url": "https://www.transitionzero.org/_next/static/media/bb394931e74b06b3-s.p.woff2",
+      "format": "woff2",
+      "weight": 500
+    }
+  },
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "About Us",
+      "icon": "users",
+      "url": "https://www.transitionzero.org/about-us"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Case Studies",
+      "icon": "books",
+      "url": "https://www.transitionzero.org/case-studies"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Contact Us",
+      "icon": "headset",
+      "url": "https://www.transitionzero.org/contact"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Overview",
       "pages": [
         "introduction",
         "quickstart",
-        "development"
+        {
+          "group": "Concepts",
+          "pages": [
+            "automation",
+            "ai_workflow",
+            "mindsdb-handlers",
+            "data_sources",
+            "ml_engines",
+            "generative-ai-tables",
+            "model-types",
+            "callbacks",
+            "tables_views_files"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Use Cases",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        {
+          "group": "Chatbots",
+          "pages": [
+            "sql/tutorials/llm-chatbot-ui",
+            "sql/tutorials/create-chatbot",
+            "sql/tutorials/slack-chatbot",
+            "sql/tutorials/twitterbot-mariadb-enterprise-server-skysql"
+          ]
+        },
+        {
+          "group": "Content Generation",
+          "pages": [
+            "sql/tutorials/image-generator",
+            "nlp/json-from-text"
+          ]
+        }
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Libraries",
       "pages": [
-        "api-reference/introduction"
+        "libraries/nodejs",
+        "libraries/serverless",
+        "libraries/ruby",
+        "libraries/python",
+        "libraries/java",
+        "libraries/react"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "API Reference",
+      "pages": ["reference/introduction"]
+    },
+    {
+      "group": "nodes",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "reference/nodes/create-node",
+        "reference/nodes/search-nodes",
+        "reference/nodes/read-node-by-slug",
+        "reference/nodes/delete-node-by-slug",
+        "reference/nodes/patch-node-by-slug",
+        "reference/nodes/provide-a-list-of-node-slugs-to-obtain-a-summary",
+        "reference/nodes/bulk-upload-nodes"
+      ]
+    },
+    {
+      "group": "node-aliases",
+      "pages": [
+        "reference/node-aliases/create-node_alias",
+        "reference/node-aliases/search-node_aliases",
+        "reference/node-aliases/read-node_alias-by-uuid",
+        "reference/node-aliases/delete-node_alias-by-uuid",
+        "reference/node-aliases/patch-node_alias-by-uuid",
+        "reference/node-aliases/bulk-delete-node_aliases-with-a-list-of-uuids",
+        "reference/node-aliases/bulk-upload-node-aliases"
+      ]
+    },
+    {
+      "group": "edges",
+      "pages": [
+        "reference/edges/create-edge",
+        "reference/edges/search-edges",
+        "reference/edges/read-edge-by-slug",
+        "reference/edges/delete-edge-by-slug",
+        "reference/edges/patch-edge-by-slug",
+        "reference/edges/bulk-upload-edges"
+      ]
+    },
+    {
+      "group": "users",
+      "pages": [
+        "reference/users/create-user",
+        "reference/users/read-user-by-username",
+        "reference/users/delete-user-by-username",
+        "reference/users/patch-user-by-username"
+      ]
+    },
+    {
+      "group": "sources",
+      "pages": [
+        "reference/sources/create-source",
+        "reference/sources/search-sources",
+        "reference/sources/read-source-by-slug",
+        "reference/sources/delete-source-by-slug",
+        "reference/sources/patch-source-by-slug"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x": "https://twitter.com/transitionzero",
+    "github": "https://github.com/transition-zero",
+    "linkedin": "https://www.linkedin.com/company/transitionzero/"
   }
 }
